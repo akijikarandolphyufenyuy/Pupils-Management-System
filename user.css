@@ -1,0 +1,104 @@
+/* EduManage Pro — User Dashboard Styles */
+:root {
+    --primary: #0a2342;
+    --accent: #c9a84c;
+    --accent-light: #f0d080;
+    --light-bg: #f4f7fb;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: var(--light-bg);
+    color: #1a1a2e;
+}
+
+.container { max-width: 900px; }
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(10,35,66,.08);
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary), #1a3a6b);
+    color: #fff;
+    font-weight: 700;
+    font-size: .95rem;
+    padding: 16px 22px;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), #1a3a6b) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 10px 22px !important;
+    transition: transform .25s, box-shadow .25s !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(10,35,66,.3) !important;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light)) !important;
+    border: none !important;
+    color: var(--primary) !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    padding: 10px 22px !important;
+    transition: transform .25s !important;
+}
+
+.btn-secondary:hover { transform: translateY(-2px) !important; }
+
+.table thead th {
+    background: var(--light-bg);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border: none;
+    padding: 12px 16px;
+}
+
+.table tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    border-color: #f0f4f8;
+    color: #3a4a6b;
+}
+
+.table tbody tr:hover { background: #f8faff; }
+
+.form-select {
+    border: 2px solid #e8ecf4;
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-family: inherit;
+    color: var(--primary);
+    background: #f8faff;
+    transition: border-color .25s, box-shadow .25s;
+}
+
+.form-select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(201,168,76,.15);
+    outline: none;
+}
+
+#gradeResult {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.05rem;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(201,168,76,.05));
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    margin-top: 12px;
+}

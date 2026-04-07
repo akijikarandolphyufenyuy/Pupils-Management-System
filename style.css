@@ -1,0 +1,38 @@
+/* EduManage Pro — Sidebar Layout */
+:root {
+    --primary: #0a2342;
+    --accent: #c9a84c;
+    --sidebar-w: 260px;
+}
+
+#sidebar {
+    width: var(--sidebar-w);
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    background: linear-gradient(180deg, var(--primary) 0%, #0d2d52 100%);
+    box-shadow: 4px 0 20px rgba(0,0,0,.2);
+    transition: transform .3s ease;
+    z-index: 100;
+}
+
+#sidebar.active {
+    transform: translateX(calc(-1 * var(--sidebar-w)));
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding-left: var(--sidebar-w);
+    transition: padding-left .3s ease;
+    min-height: 100vh;
+    background: #f4f7fb;
+}
+
+#sidebar.active + #page-content-wrapper {
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    #sidebar { transform: translateX(calc(-1 * var(--sidebar-w))); }
+    #sidebar.open { transform: translateX(0); }
+    #page-content-wrapper { padding-left: 0; }
+}

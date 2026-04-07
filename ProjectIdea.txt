@@ -1,0 +1,18 @@
+This is a Software Requirement Specification Document That Contains The Description of the Project.
+
+Project Name: webmanagement system designe for a primary school.
+
+Description:
+This webmanagement system helps to manage students applications to enter the school, Studenst Registration into the 
+School, and the Recording of the students Marks into the system by the school  Technical administrator.
+It is designed inform of a webapplication.
+
+How It Works:
+After loging into the site the home page of the school is appears containing the application section for individuals who
+seeking for admission into the school to go and fill the addmissio form.
+and also contains a signin button for students that have already been registered into the system to loginto their accounts
+and view their marks. Still on the home page we have some of the school futures.
+once the student logsin to his account he can upload a profile picture of his choice and the view and download his marks
+. 
+School technical administrator:
+ He is there to register the students into the system and fill in their marks for the various courses the school offers.
